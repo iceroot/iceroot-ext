@@ -1,38 +1,39 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
+    <modelVersion>4.0.0</modelVersion>
 
-  <groupId>com.icexxx</groupId>
-  <artifactId>iceroot-ext</artifactId>
-  <version>2.0.0</version>
-  <packaging>jar</packaging>
+    <groupId>com.icexxx</groupId>
+    <artifactId>iceroot-ext</artifactId>
+    <version>2.0.1</version>
+    <packaging>jar</packaging>
 
-  <name>iceroot-ext</name>
-  <url>http://maven.apache.org</url>
-  <description>iceroot extension tools.</description>
-  <licenses>
-     <license>
-       <name>The Apache License, Version 2.0</name>
-       <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
-     </license>
-  </licenses>
+    <name>iceroot-ext</name>
+    <url>http://maven.apache.org</url>
+    <description>iceroot extension tools.</description>
+    <licenses>
+        <license>
+            <name>The Apache License, Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+        </license>
+    </licenses>
    
-  <developers>
-    <developer>
-      <name>IceWwater</name>
-      <email>zxcyhn@126.com</email>
-    </developer>
-  </developers>
+    <developers>
+        <developer>
+            <name>IceWwater</name>
+            <email>zxcyhn@126.com</email>
+        </developer>
+    </developers>
 
-  <dependencies>
+    <dependencies>
+    <!-- https://mvnrepository.com/artifact/cn.hutool/hutool-core -->
     <dependency>
-    <groupId>com.xiaoleilu</groupId>
-        <artifactId>hutool-json</artifactId>
-        <version>3.2.3</version>
+        <groupId>cn.hutool</groupId>
+        <artifactId>hutool-all</artifactId>
+        <version>4.0.8</version>
     </dependency>
     <dependency>
-    <groupId>net.sf.json-lib</groupId>
-    <artifactId>json-lib</artifactId>
+        <groupId>net.sf.json-lib</groupId>
+        <artifactId>json-lib</artifactId>
         <version>2.4</version>
         <classifier>jdk15</classifier>
     </dependency>
@@ -46,10 +47,23 @@
         <artifactId>jsch</artifactId>
         <version>0.1.54</version>
     </dependency>
+    <!-- https://mvnrepository.com/artifact/org.javassist/javassist -->
+    <dependency>
+        <groupId>org.javassist</groupId>
+        <artifactId>javassist</artifactId>
+        <version>3.22.0-GA</version>
+    </dependency>
+    <dependency>
+        <groupId>org.springframework</groupId>
+        <artifactId>spring-context</artifactId>
+        <version>4.3.0.RELEASE</version>
+        <scope>compile</scope>
+        <optional>true</optional>
+    </dependency>
     <dependency>
         <groupId>junit</groupId>
         <artifactId>junit</artifactId>
-        <version>4.11</version>
+        <version>4.12</version>
         <scope>test</scope>
     </dependency>
   </dependencies>

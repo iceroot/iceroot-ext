@@ -6,7 +6,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import com.xiaoleilu.hutool.json.JSONUtil;
+import cn.hutool.json.JSONUtil;
 
 public class IceJsonTest3 {
 
@@ -51,15 +51,15 @@ public class IceJsonTest3 {
         String json = null;
         json = JSONUtil.toJsonStr(user);
         System.out.println(json);
-        com.xiaoleilu.hutool.json.JSONObject hutoolJson = JSONUtil.parseObj(json);
+        cn.hutool.json.JSONObject hutoolJson = JSONUtil.parseObj(json);
         System.out.println(hutoolJson.get("product"));
         com.alibaba.fastjson.JSONObject fast = JSONConvert.toFastJSONObject(hutoolJson);
         System.out.println(fast.get("product"));
-        com.xiaoleilu.hutool.json.JSONObject hutool = JSONConvert.toHutoolJSONObject(fast);
+        cn.hutool.json.JSONObject hutool = JSONConvert.toHutoolJSONObject(fast);
         System.out.println(hutool.get("product"));
         net.sf.json.JSONObject sf = JSONConvert.toSfJSONObject(hutool);
         System.out.println(sf.get("product"));
-        com.xiaoleilu.hutool.json.JSONObject hutool2 = JSONConvert.toHutoolJSONObject(sf);
+        cn.hutool.json.JSONObject hutool2 = JSONConvert.toHutoolJSONObject(sf);
         System.out.println(hutool2.get("product"));
         com.alibaba.fastjson.JSONObject fast2 = JSONConvert.toFastJSONObject(sf);
         System.out.println(fast2.get("product"));

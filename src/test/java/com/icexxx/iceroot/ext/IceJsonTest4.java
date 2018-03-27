@@ -6,7 +6,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import com.xiaoleilu.hutool.json.JSONUtil;
+import cn.hutool.json.JSONUtil;
 
 public class IceJsonTest4 {
 
@@ -51,15 +51,15 @@ public class IceJsonTest4 {
         String json = null;
         json = JSONUtil.toJsonStr(listProduct);
         System.out.println(listProduct);
-        com.xiaoleilu.hutool.json.JSONArray hutoolJson = JSONUtil.parseArray(json);
+        cn.hutool.json.JSONArray hutoolJson = JSONUtil.parseArray(json);
         System.out.println(hutoolJson.get(0));
         com.alibaba.fastjson.JSONArray fast = JSONConvert.toFastJSONArray(hutoolJson);
         System.out.println(fast.get(0));
-        com.xiaoleilu.hutool.json.JSONArray hutool = JSONConvert.toHutoolJSONArray(fast);
+        cn.hutool.json.JSONArray hutool = JSONConvert.toHutoolJSONArray(fast);
         System.out.println(hutool.get(0));
         net.sf.json.JSONArray sf = JSONConvert.toSfJSONArray(hutool);
         System.out.println(sf.get(0));
-        com.xiaoleilu.hutool.json.JSONArray hutool2 = JSONConvert.toHutoolJSONArray(sf);
+        cn.hutool.json.JSONArray hutool2 = JSONConvert.toHutoolJSONArray(sf);
         System.out.println(hutool2.get(0));
         com.alibaba.fastjson.JSONArray fast2 = JSONConvert.toFastJSONArray(sf);
         System.out.println(fast2.get(0));

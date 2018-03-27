@@ -8,7 +8,13 @@ import com.jcraft.jsch.JSchException;
 import com.jcraft.jsch.Session;
 import com.jcraft.jsch.SftpException;
 
-class IceFtpClient {
+/**
+ * sftp工具类
+ * 
+ * @author IceWater
+ * @version 2.0
+ */
+public class IceFtpClient {
     public static boolean upload(String username, String password, String host, int port, String localFileName,
             String remoteFile) {
         localFileName = localFileName.replace("\\", "/");
