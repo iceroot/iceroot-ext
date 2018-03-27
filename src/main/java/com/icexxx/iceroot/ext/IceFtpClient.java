@@ -12,7 +12,7 @@ import com.jcraft.jsch.SftpException;
  * sftp工具类
  * 
  * @author IceWater
- * @version 2.0
+ * @version 2.0.0
  */
 public class IceFtpClient {
     public static boolean upload(String username, String password, String host, int port, String localFileName,

@@ -4,7 +4,7 @@ package com.icexxx.iceroot.ext;
  * json互相转化
  * 
  * @author IceWater
- * @version 2.0
+ * @version 2.0.0
  */
 public class JSONAdapter {
     public static <T> cn.hutool.json.JSONObject fastJSON2HutoolJSONObject(T jsonObject) {

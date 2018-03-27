@@ -4,7 +4,7 @@ package com.icexxx.iceroot.ext;
  * JSON转换工具类
  * 
  * @author IceWater
- * @version 2.0
+ * @version 2.0.0
  */
 public class JSONConvert {
     public static <T> cn.hutool.json.JSONObject toHutoolJSONObject(T jsonObject) {

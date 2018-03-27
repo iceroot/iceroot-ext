@@ -4,7 +4,7 @@ package com.icexxx.iceroot.ext;
  * sftp工具类
  * 
  * @author Icewater
- * @version 2.0
+ * @version 2.0.0
  */
 public class IceFtpUtil {
     /**

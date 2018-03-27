@@ -12,15 +12,16 @@ import cn.hutool.core.util.StrUtil;
  * spring bean工具类
  * 
  * @author IceWater
- * @version 2.1
+ * @version 2.0.1
  */
 public class IceBeanUtil {
     /**
      * 根据spring上下文获取bean
      * 
      * @param ac spring上下文
+     * @param <T> 泛型
      * @return 获取的bean
-     * @since 2.1
+     * @since 2.0.1
      */
     public static <T> T getBean(ApplicationContext ac) {
         if (ac == null) {
@@ -81,7 +82,7 @@ public class IceBeanUtil {
      * @param ac spring上下文
      * @param name bean名称
      * @return 获取的bean对象
-     * @since 2.1
+     * @since 2.0.1
      */
     public static <T> T getBean(ApplicationContext ac, String name) {
         if (ac == null) {

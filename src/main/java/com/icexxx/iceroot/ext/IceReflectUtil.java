@@ -8,7 +8,7 @@ import javassist.CtClass;
  * 反射工具类
  * 
  * @author IceWater
- * @version 2.1
+ * @version 2.0.1
  */
 public class IceReflectUtil {
     /**
@@ -16,7 +16,7 @@ public class IceReflectUtil {
      * 
      * @param className 类名称
      * @return 创建的类
-     * @since 2.1
+     * @since 2.0.1
      */
     public static Class create(String className) {
         ClassPool pool = ClassPool.getDefault();
