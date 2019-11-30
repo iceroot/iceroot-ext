@@ -27,7 +27,6 @@ public class IceBeanUtil {
         if (ac == null) {
             return null;
         }
-        String name = null;
         StackTraceElement stackTraceCurrent = null;
         try {
             throw new Exception();
